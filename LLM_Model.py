@@ -7,16 +7,16 @@ print("Hello AI Agents");
 
 print("test");
 
+from anthropic import Anthropic
 
-from openai import OpenAI
+client = Anthropic(api_key="?")  # your key
 
-client = OpenAI(
-    api_key="?"
+response = client.messages.create(
+    model="claude-sonnet-4-6",  # ✅ updated model
+    max_tokens=50,
+    messages=[
+        {"role": "user", "content": "Write a one-line joke about AI"}
+    ]
 )
 
-response = client.responses.create(
-    model="gpt-4.1-mini",
-    input="Write a one-line joke about AI"
-)
-
-print(response.output[0].content[0].text)
+print(response.content[0].text)
