@@ -317,4 +317,4 @@ elif search_btn and not query:
 
 # ── Footer ─────────────────────────────────────────────────────
 st.divider()
-st.caption("Built with ❤️ using CrewAI · Groq · Tavily · Streamlit | 🛡️ Guardrails enabled")
+st.caption("Built with using CrewAI · Groq · Tavily · Streamlit | 🛡️ Guardrails enabled")
