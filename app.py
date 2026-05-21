@@ -211,7 +211,7 @@ This AI Shopping Agent is built exclusively to help you **find and compare produ
     step4.info("⏳ Writer\nWaiting...")
 
     status_box = st.empty()
-    status_box.warning("⏳ Waiting 60 seconds to respect API rate limits...")
+    status_box.warning("Generating...")
     time.sleep(60)
 
     # ── Build LLM and Tool ─────────────────────────────────────
